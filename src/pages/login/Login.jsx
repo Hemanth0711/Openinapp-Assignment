@@ -32,16 +32,16 @@ export default function Login() {
         </div>
         <div className="skew-part"></div>
         <div className="footer-logos">
-          <a>
+          <a href = "">
             <img src={gitLogo} alt="" />
           </a>
-          <a>
+          <a href = "">
             <img src={twitterLogo} alt="" />
           </a>
-          <a>
+          <a href = "">
             <img style = {{width: "50px", height: "50px"}} src={discordLogo} alt="" />
           </a>
-          <a>
+          <a href = "">
             <img style = {{width: "50px", height: "50px"}} src={linkedinLogo} alt="" />
           </a>
         </div>
@@ -72,13 +72,13 @@ export default function Login() {
               <label>Password</label>
               <input type="password" placeholder="Password" required="true" />
               <div class="forgot-password">
-                <a href="#">Forgot Password?</a>
+                <a href="">Forgot Password?</a>
               </div>
               <button type="submit">Sign In</button>
             </form>
           </div>
           <div class="register-link">
-            Don't have an account? <a href="#">Register Here</a>
+            Don't have an account? <a href="">Register Here</a>
           </div>
         </div>
       </div>
