@@ -1,0 +1,168 @@
+/* NewComponent.css */
+
+
+
+  .newComponent {
+    width: 30%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    padding: 10px;
+  }
+  
+  /* Style for the header */
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .header span {
+    font-family: Figtree;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000000;
+    padding-left: 20px;
+  }
+  
+  /* Style for the close icon */
+  .header img {
+    cursor: pointer;
+    padding-right: 30px;
+  }
+
+  
+  /* Style for the form buttons */
+  .form-btns {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .form-btns>div {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .form-btns>div>button{
+    font-family: Figtree;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+
+  .form-btns span:hover {
+    background-color: #e0e0e0;
+  }
+
+  .base-lines {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+  }
+
+  .base-lines>div {
+    width: 45%;
+    height: 4px;
+    border-radius: 5px;
+  }
+
+  .active-line {
+    background-color: #357ae8;
+  }
+
+  .normal-line {
+    background-color: #D9D9D9;
+  }
+
+  .basic-form, .contact-from {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    
+  }
+  /* Style for the input labels and fields */
+
+
+.basic-form label,
+.contact-form label {
+  font-family: Figtree;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0 20px;
+}
+
+.basic-form input,
+.contact-form input {
+  font-family: Figtree;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #D9D9D9;
+  border: 1px solid #D9D9D9;
+  border-radius: 8px;
+  padding: 5px;
+  
+  margin: 5px 20px;
+}
+
+
+  .btn {
+    width: fit-content;
+    cursor: pointer;
+    background-color: #4285f4; /* Google blue color */
+    color: white;
+    border: none;
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: right;
+    margin: 20px;
+  }
+  
+  .footer button:last-child {
+    margin-right: 0;
+  }
+  
+  .footer button:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+  }
+  
+  /* Style for the "Contact" form, initially hidden */
+  .contact-form {
+    display: none;
+  }
+
+  .line {
+    width: 100%;
+    height: 0.5px;
+    background-color: #D9D9D9;
+  }
+  

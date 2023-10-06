@@ -1,0 +1,10 @@
+.frames {
+    display: flex;
+}
+
+@media screen and (max-width: 740px) {
+    .frames {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
