@@ -3,7 +3,6 @@ import './App.css';
 import Login from './pages/login/Login';
 import Dashboard from './pages/dashboard/Dashboard';
 import { Routes, Route } from 'react-router-dom';
-import NewComponent from './components/newComponent/NewComponent';
 
 export default function App() {
   const [jwtToken, setJwtToken] = useState(localStorage.getItem('jwtToken'));

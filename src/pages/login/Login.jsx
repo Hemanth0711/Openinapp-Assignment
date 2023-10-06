@@ -5,7 +5,6 @@ import appleLogo from "../../images/apple 1.svg";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { GoogleLogin } from "@react-oauth/google";
 import jwt_decode from "jwt-decode";
-import googleLogo from "../../images/google-icon 1.svg";
 import discordLogo from "../../images/carbon_logo-discord.svg";
 import twitterLogo from "../../images/twitter-logo.svg";
 import gitLogo from "../../images/github-logo.svg";

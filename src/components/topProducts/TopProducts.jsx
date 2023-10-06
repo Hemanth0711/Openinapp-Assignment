@@ -46,7 +46,6 @@ const TopProducts = () => {
         },
     };
 
-    const title = 'Doughnut Title'; // Your desired title text
 
     return (
         <div className='ring-chart'>
