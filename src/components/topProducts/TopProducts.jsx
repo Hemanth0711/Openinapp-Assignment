@@ -19,7 +19,7 @@ const TopProducts = () => {
                 backgroundColor: ['#98D89E', '#EE8484', '#F6DC7D'],
                 borderWidth: 0,
                 borderRadius: 5,
-                cutout: "80%", // Adjust the cutout percentage to control the size of the ring
+                cutout: "85%", // Adjust the cutout percentage to control the size of the ring
             },
         ],
     };
@@ -40,7 +40,7 @@ const TopProducts = () => {
                     },
                 },
                 margin: {
-                    right: 20,
+                    left: 20,
                 },
             },
         },
@@ -50,17 +50,11 @@ const TopProducts = () => {
 
     return (
         <div className='ring-chart'>
-            <Doughnut data={data} options={options} plugins={[{
-                beforeDraw: (chart) => {
-                    const ctx = chart.ctx;
-                    const { top } = chart.chartArea;
-                    ctx.textAlign = 'center';
-                    ctx.textBaseline = 'middle';
-                    ctx.font = '16px Montserrat';
-                    ctx.fillStyle = '#000'; // Title text color
-                    ctx.fillText(title, chart.width / 2, top - 10); // Adjust vertical position
-                }
-            }]} />
+            <div className="chart-title">
+                <span>Top Products</span>
+                <span>May - June 2021</span>
+            </div>
+            <Doughnut data={data} options={options} style = {{marginRight: "5rem"}} />
         </div>
     );
 };

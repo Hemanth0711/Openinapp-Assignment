@@ -76,7 +76,7 @@ export default function Chart() {
 
     return (
         <div className='chart'>
-            <Bar data={data} options={options} />
+            <Bar data={data} options={options} style = {{width: "100%"}}/>
         </div>
     );
 }
