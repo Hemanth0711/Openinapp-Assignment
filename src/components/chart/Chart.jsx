@@ -11,7 +11,7 @@ export default function Chart() {
         datasets: [
             {
                 label: 'Label 1',
-                data: [40, 100, 200, 120],
+                data: [40, 100, 200, 500],
                 backgroundColor: '#98D89E',
                 borderRadius: 5,
             },
@@ -37,13 +37,13 @@ export default function Chart() {
                 beginAtZero: true,
                 ticks: {
                     stepSize: 100,
-                    max: 300,
+                    max: 500,
                 },
             },
         },
         plugins: {
             legend: {
-                display: true,
+                display: false,
                 position: 'top', // Move the legend to the top
                 align: 'end',   // Align the legend to the end (right) of the chart
                 labels: {
@@ -52,30 +52,22 @@ export default function Chart() {
                     boxHeight: 8,        // Adjust the height of the legend items
                     padding: 16,         // Add padding between legend items
                 },
-            },
-            title: {
-                display: true,
-                text: 'Chart', // Add your chart title text here
-                position: 'top',    // Position the title at the top
-                align: 'start',     // Align the title to the start (left) from the user's perspective
-                padding: 20,        // Add more padding to the title to make it visible
-                font: {
-                    size: 16,       // Adjust the title font size as needed
-                },
-            },
-            description: {
-                text: 'Chart Description', // Add your chart description text here
-                position: 'top',          // Position the description at the top
-                align: 'start',           // Align the description to the start (left) from the user's perspective
-                font: {
-                    size: 12,             // Adjust the description font size as needed
-                },
-            },
+            }
         }
     };
 
     return (
         <div className='chart'>
+            <div>
+                <span className="chart-title">Activities</span>
+                <div>
+                    <span className='chart-date'>May - June 2021</span>
+                    <div className='chart-legends'>
+                        <div><div style = {{background: "#98D89E"}} ></div>Guest</div>
+                        <div><div style = {{background: "#EE8484"}} ></div>User</div>
+                    </div>
+                </div>
+            </div>
             <Bar data={data} options={options} style = {{width: "100%"}}/>
         </div>
     );

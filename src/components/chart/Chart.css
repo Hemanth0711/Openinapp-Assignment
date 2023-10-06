@@ -5,8 +5,74 @@
     border: 3px solid rgba(98, 98, 98, 0.15);
     margin-left: 1rem;
     margin-right: 1rem;
-    height: 28%; /* Keep the specified height */
+    height: 25%; /* Keep the specified height */
+    padding-bottom: 6rem;
+}
+
+.chart>div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart>div>div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.chart-legends {
+    display: flex;
+    gap: 3rem;
+}
+
+.chart-legends>div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.chart-title {
+    gap: 1rem;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.chart-legends>div>div {
+    display: flex;
+    width: 11px;
+    height: 11px;
+    background-color: red;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 
+.chart-title>span:nth-of-type(2) {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
 

@@ -1,21 +1,71 @@
 .ring-chart {
     width: 45%;
-    height: 62%;
+    height: fit-content;
     background-color: white;
     border-radius: 2rem;
     padding: 2rem;
     border: 3px solid rgba(98, 98, 98, 0.15);
     margin: 2rem;
     margin-left: 1rem;
+    position: relative;
+    
+}
+.ring-chart > div:nth-of-type(2) {
+    display:flex;
+    gap: 5rem;
+    margin-top: 2rem;
+    justify-content: start;
+    margin-left: -3rem;
 }
 
-.chart-title {
+
+.legends {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-left: -5rem;
+}
+.legend>div:nth-of-type(1) {
+    display: flex;
+    gap: 1rem;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.legend>div:nth-of-type(2) {
+    margin-left: 2rem;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.legend>div>div {
+    width: 11px;
+    height: 11px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.legend {
+    display: block;
+}
+
+.ring-title {
     display: flex;
     justify-content: space-between;
     margin: 0 2rem;
 }
 
-.chart-title>span:nth-of-type(1) {
+.ring-title>span:nth-of-type(1) {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
@@ -25,7 +75,7 @@
 
 }
 
-.chart-title>span:nth-of-type(2) {
+.ring-title>span:nth-of-type(2) {
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 400;
