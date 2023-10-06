@@ -1,21 +1,14 @@
 import React from 'react';
 import "./TopProducts.css";
-import {
-    Chart as ChartJS,
-    ArcElement,
-    Tooltip,
-    CategoryScale,
-    Legend,
-} from 'chart.js';
-
 import { Doughnut } from 'react-chartjs-2';
+import { Chart, ArcElement, Tooltip, CategoryScale, Legend } from 'chart.js';
 
-ChartJS.register(
+Chart.register(
     ArcElement,
     Tooltip,
     CategoryScale,
     Legend
-)
+);
 
 const TopProducts = () => {
     const data = {
@@ -35,27 +28,39 @@ const TopProducts = () => {
         plugins: {
             legend: {
                 display: true,
-                position: 'right', // Position the legend to the right
+                position: 'right', // Position the legend on the right
                 align: 'center', // Center the legend vertically
                 labels: {
-                    usePointStyle: true, // Use small circle shapes for legend items
-                    boxWidth: 12, // Adjust the width of the legend items
-                    boxHeight: 12, // Adjust the height of the legend items
-                    padding: 16, // Add padding between legend items
+                    usePointStyle: true,
+                    boxWidth: 12,
+                    boxHeight: 12,
+                    padding: 16,
                     font: {
-                        size: 14, // Set the legend text size
+                        size: 14,
                     },
                 },
                 margin: {
-                    right: 20, // Add right margin to the legend
+                    right: 20,
                 },
             },
         },
     };
 
+    const title = 'Doughnut Title'; // Your desired title text
+
     return (
         <div className='ring-chart'>
-            <Doughnut data={data} options={options} />
+            <Doughnut data={data} options={options} plugins={[{
+                beforeDraw: (chart) => {
+                    const ctx = chart.ctx;
+                    const { top } = chart.chartArea;
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.font = '16px Montserrat';
+                    ctx.fillStyle = '#000'; // Title text color
+                    ctx.fillText(title, chart.width / 2, top - 10); // Adjust vertical position
+                }
+            }]} />
         </div>
     );
 };

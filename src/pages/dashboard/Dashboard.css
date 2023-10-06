@@ -112,19 +112,20 @@
 }
 
 .search-container {
-    display: flex;
     background-color: white;
     width: fit-content;
-    padding: 0 2rem;
     color: rgba(133, 133, 133, 1);
-    justify-content: center;
-    align-items: center;
     border-radius: 5px;
     cursor: pointer; /* Add cursor pointer */
+    padding: 0.5rem 2rem;
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-container>img {
-    width: 12px;
+    width: 13px;
     height: 13px;
     margin-left: 2rem;
     cursor: pointer; /* Add cursor pointer */
@@ -165,5 +166,15 @@
     color: #858585;
 }
 
-
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 0; /* Place it above other content */
+    cursor: pointer;
+  }
+  
 

@@ -8,7 +8,7 @@ export default function Frame(props) {
         <img  src = {props.icon} alt = ""/>
         
       </div>
-      <div>Total Revenus</div>
+      <div>{props.name}</div>
       <div className="revenue">
         <div className="amount">{props.amount}</div>
         <div className="percentage">{props.percentage}</div>

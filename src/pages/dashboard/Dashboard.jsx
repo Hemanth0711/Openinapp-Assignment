@@ -66,10 +66,10 @@ export default function Dashboard() {
             <div className="header-right">
                 <div className="search-container">
                     <div>Search...</div>
-                    <img src = {searchIcon} alt = "search Icon"/>
+                    <img style = {{padding: 0}} src = {searchIcon} alt = "search Icon"/>
                 </div>
-                <img src = {bellIcon} alt = "bell Icon"/>
-                <img src = {maskGroup} alt = "mask group"/>
+                <img style = {{padding: 0}} src = {bellIcon} alt = "bell Icon"/>
+                <img style = {{padding: 0, objectFit: "cover", width: "2rem", height: "2rem"}} src = {maskGroup} alt = "mask group"/>
             </div>
         </div>
         <Frames />
@@ -90,9 +90,15 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+      {/* Transparent overlay */}
       {isModalOpen && (
-            <NewComponent onClose={closeModal}/>
-        )}
+        <div className="modal-overlay" onClick={closeModal}></div>
+      )}
+      
+      {/* NewComponent */}
+      {isModalOpen && (
+        <NewComponent onClose={closeModal} />
+      )}
     </div>
   );
 }

@@ -3,13 +3,13 @@
 
 
   .newComponent {
-    width: 30%;
+    width: 35%;
     height: fit-content;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 25%;
     padding: 10px;
   }
