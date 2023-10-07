@@ -172,4 +172,11 @@
   }
 
  
-  
+  @media screen and (max-width: 750px) {
+    .newComponent {
+      position: absolute;
+      bottom: 0;
+      left: 1rem;
+      width: 90%;
+    }
+  }
