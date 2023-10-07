@@ -86,3 +86,10 @@
 
 }
 
+@media screen and (max-width: 750px) {
+    .chart {
+        height: fit-content;
+        padding-bottom: 2rem;
+    }
+}
+

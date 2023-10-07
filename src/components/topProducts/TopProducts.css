@@ -88,5 +88,18 @@
 @media screen and (max-width: 740px){
     .ring-chart {
         width: 100%;
+        padding: 2rem 0;
     }
+
+    .ring-chart>div:nth-of-type(2) {
+        display: flex;
+        gap: 3.5rem;
+    }
+
+    .canvas {
+        width: 10%;
+        height: 10%;
+    }
+
+    
 }

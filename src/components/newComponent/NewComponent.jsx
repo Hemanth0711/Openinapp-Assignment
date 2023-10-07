@@ -53,15 +53,15 @@ export default function NewComponent({ onClose }) {
           {
             !showSocialFields && (
               <>
-                <label htmlFor="name">Name:</label>
+                <label htmlFor="name">Enter Name*</label>
                 <input type="text" id="name" name="name" required="true" placeholder='Eg. John Doe' />
                 <br />
 
-                <label htmlFor="email">Email:</label>
+                <label htmlFor="email">Enter Email*</label>
                 <input type="email" id="email" name="email" required="true" placeholder='John@xyz.com' />
                 <br />
 
-                <label htmlFor="phone">Phone:</label>
+                <label htmlFor="phone">Enter Phone*</label>
                 <input type="tel" id="phone" name="phone" required="true" placeholder='Eg. 98XXXXXXX' />
                 <br />
               </>
@@ -70,11 +70,11 @@ export default function NewComponent({ onClose }) {
           
           {showSocialFields && (
             <>
-              <label htmlFor="instagram">Instagram:</label>
+              <label htmlFor="instagram">Instagram Link <span className="optional-text">(Optional)</span></label>
               <input type="text" id="instagram" name="instagram" placeholder='Instagram Username' />
               <br />
 
-              <label htmlFor="linkedin">LinkedIn:</label>
+              <label htmlFor="linkedin">Youtube Link <span className="optional-text">(Optional)</span></label>
               <input type="text" id="linkedin" name="linkedin" placeholder='LinkedIn Profile URL' />
               <br />
             </>

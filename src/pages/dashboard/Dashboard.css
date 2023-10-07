@@ -217,5 +217,21 @@
     .dashboard-component, .dashboard {
         margin-left: 1rem;
     }
+
+    .search-container>div {
+        display: none;
+       
+    }
+
+    .search-container{
+        background: none;
+        padding: 0;
+    }
+    .search-container>img {
+        float: right;
+        width: 19px;
+        height: 32px;
+    }
+
     
 }

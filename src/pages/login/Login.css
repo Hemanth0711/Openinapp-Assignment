@@ -137,6 +137,7 @@
 .login-form-container {
   background-color: white;
   padding: 3rem;
+  border-radius: 10px;
 }
 
 /* Style for the login form */
@@ -212,11 +213,32 @@
 
 @media screen and (max-width: 740px) {
   .login {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .login-left {
+    display: none;
+  }
+
   .login-right {
-    position: absolute;
-    inset: 0;
-    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-form-container{
+    width: 100%;
+  }
+
+  .sign-google-apple {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .login-container{
+    margin-left: -5rem;
   }
 }
