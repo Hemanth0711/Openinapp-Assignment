@@ -233,5 +233,13 @@
         height: 32px;
     }
 
+    .header {
+        margin: 0;
+    }
+
+    .header-right {
+        margin: 0;
+    }
+
     
 }
