@@ -6,14 +6,16 @@
 
 .navbar {
     background-color: rgba(66, 133, 244, 1);
-    height: 100vh;
-    width: fit-content;
+    min-height: 944px;
+    width: 280px;
     padding-right: 3rem;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     cursor: pointer; /* Add cursor pointer */
 }
+
+
 
 .navbar-title {
     width: 123px;
@@ -24,7 +26,8 @@
     line-height: 44px;
     letter-spacing: 0em;
     text-align: left;
-    margin: 3rem;
+    margin: 4rem;
+    margin-left: 3rem;
     margin-right: 0;
     cursor: pointer; /* Add cursor pointer */
 }
@@ -41,7 +44,7 @@
 .navbar-content-top {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .navbar-content-top>div {
@@ -133,7 +136,7 @@
 
 .addComponent {
     width: 45%;
-    height: 62%;
+    height: 256px;
     background-color: white;
     border-radius: 2rem;
     padding: 2rem;
@@ -176,5 +179,22 @@
     z-index: 0; /* Place it above other content */
     cursor: pointer;
   }
+
+  .dashboard-bottom {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+   
+    justify-content: space-between;
+  }
   
 
+@media screen and (max-width: 740px){
+    .addComponent {
+        width: 100%;
+    }
+    .dashboard-bottom{
+        flex-wrap: wrap;
+    }
+    
+}

@@ -75,11 +75,7 @@ export default function Dashboard() {
         <Frames />
         <Chart />
         <div
-          style={{
-            height: 'fit-content',
-            width: '100%',
-            display: 'flex',
-          }}
+          className='dashboard-bottom'
         >
           <TopProducts />
           <div className="addComponent" onClick={openModal}>

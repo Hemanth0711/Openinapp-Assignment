@@ -1,6 +1,6 @@
 .ring-chart {
     width: 45%;
-    height: fit-content;
+    height: 256px;
     background-color: white;
     border-radius: 2rem;
     padding: 2rem;
@@ -86,3 +86,8 @@
 }
 
 
+@media screen and (max-width: 740px){
+    .ring-chart {
+        width: 100%;
+    }
+}
