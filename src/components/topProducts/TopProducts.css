@@ -1,12 +1,11 @@
 .ring-chart {
-    width: 45%;
+    width: 43%;
     height: 256px;
     background-color: white;
     border-radius: 2rem;
     padding: 2rem;
     border: 3px solid rgba(98, 98, 98, 0.15);
-    margin: 2rem;
-    margin-left: 1rem;
+    
     position: relative;
     
 }

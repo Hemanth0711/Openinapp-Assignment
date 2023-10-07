@@ -1,7 +1,6 @@
 .frame {
     background-color: white;
-    margin: 1rem;
-    width: 30%;
+    width: 17%;
     height: 120px;
     padding: 0 2rem;
     border-radius: 2rem;
@@ -72,5 +71,6 @@
 @media screen and (max-width: 740px) {
     .frame {
         width: 100%;
+        margin-top: 1rem;
     }
 }

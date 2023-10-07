@@ -1,11 +1,7 @@
 .frames {
     display: flex;
-    margin-bottom: 1rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
-@media screen and (max-width: 740px) {
-    .frames {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}

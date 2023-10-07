@@ -6,7 +6,7 @@
 
 .navbar {
     background-color: rgba(66, 133, 244, 1);
-    min-height: 944px;
+    min-height: 100%;
     width: 280px;
     padding-right: 3rem;
     border-radius: 20px;
@@ -135,14 +135,13 @@
 }
 
 .addComponent {
-    width: 45%;
+    width: 43%;
     height: 256px;
     background-color: white;
     border-radius: 2rem;
     padding: 2rem;
     border: 3px solid rgba(98, 98, 98, 0.15);
-    margin: 2rem;
-    margin-left: 1rem;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,17 +183,16 @@
     height: fit-content;
     width: 100%;
     display: flex;
-   
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 2rem;
   }
   
 
 @media screen and (max-width: 740px){
     .addComponent {
         width: 100%;
-    }
-    .dashboard-bottom{
-        flex-wrap: wrap;
+        margin-top: 1rem;
     }
     
 }
