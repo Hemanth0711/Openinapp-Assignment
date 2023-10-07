@@ -41,6 +41,17 @@
     text-align: left;
 
 }
+
+.chart-date {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
 .chart-legends>div>div {
     display: flex;
     width: 11px;

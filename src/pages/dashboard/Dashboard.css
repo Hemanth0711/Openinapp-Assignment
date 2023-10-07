@@ -4,6 +4,8 @@
     position: relative;
 }
 
+
+
 .navbar {
     background-color: rgba(66, 133, 244, 1);
     min-height: 100%;
@@ -12,7 +14,6 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    cursor: pointer; /* Add cursor pointer */
 }
 
 
@@ -95,6 +96,13 @@
 }
 
 .header>div:nth-of-type(1){
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header>div:nth-of-type(1)>div{
     width: 138px;
     height: 29px;
     top: 71px;
@@ -106,6 +114,13 @@
     letter-spacing: 0em;
     text-align: left;
     cursor: pointer; /* Add cursor pointer */
+    
+}
+
+.header>div:nth-of-type(1)>img {
+    color: rgba(66, 133, 244, 1);
+    display: none;
+    padding: 0;
 }
 
 .header-right {
@@ -193,6 +208,14 @@
     .addComponent {
         width: 100%;
         margin-top: 1rem;
+    }
+
+    .header>div:nth-of-type(1)>img {
+        display: block;
+    }
+
+    .dashboard-component, .dashboard {
+        margin-left: 1rem;
     }
     
 }

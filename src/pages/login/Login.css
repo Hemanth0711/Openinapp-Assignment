@@ -209,3 +209,14 @@
   width: 44px;
   height: 44px;
 }
+
+@media screen and (max-width: 740px) {
+  .login {
+    position: relative;
+  }
+  .login-right {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+  }
+}

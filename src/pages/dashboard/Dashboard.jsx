@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Dashboard.css';
+import menubarIcon from "../../images/icons8-menu.svg";
 import scheduleIcon from "../../images/schedule_icon.svg"
 import searchIcon from '../../images/Search icon.svg';
 import bellIcon from '../../images/Vector.svg';
@@ -16,6 +17,7 @@ import NewComponent from '../../components/newComponent/NewComponent';
 
 export default function Dashboard() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isNavbarOpen, setNavbarOpen] = useState(window.innerWidth > 740);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -25,9 +27,27 @@ export default function Dashboard() {
     setIsModalOpen(false);
   };
 
+  // Add an event listener to handle screen width changes
+  useEffect(() => {
+    const handleResize = () => {
+      setNavbarOpen(window.innerWidth > 740);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const toggleNavbar = () => {
+    setNavbarOpen((prevNavbarOpen) => !prevNavbarOpen);
+  };
+
   return (
     <div className="dashboard">
-      <div className="navbar">
+      {
+        isNavbarOpen && <div className="navbar">
         <div className="navbar-title">
             Board.
         </div>
@@ -35,7 +55,7 @@ export default function Dashboard() {
             <div className="navbar-content-top">
                 <div>
                     <img src = {dashboardIcon} alt = ""/>
-                    <div className='text'>Dashboard</div>
+                    <div style={{fontWeight: "700"}}>Dashboard</div>
                 </div>
                 <div>
                     <img src = {transactionIcon} alt = ""/>
@@ -60,9 +80,13 @@ export default function Dashboard() {
             </div>
         </div>
       </div>
+      }
       <div className="dashboard-component">
       <div className="header">
-            <div>Dashboard</div>
+            <div>
+              <img onClick = {toggleNavbar} src = {menubarIcon} alt = "menubar"/>
+              <div>Dashboard</div>
+            </div>
             <div className="header-right">
                 <div className="search-container">
                     <div>Search...</div>
